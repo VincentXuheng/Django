@@ -15,6 +15,9 @@ class Dept(models.Model):
 
     class Meta:
            db_table = 'tb_dept'
+
+    def __str__(self):
+        return self.name
    
 
 class Emp(models.Model):
@@ -32,3 +35,6 @@ class Emp(models.Model):
    
     class Meta:
            db_table = 'tb_emp'
+
+    def __str__(self):
+        return self.name
